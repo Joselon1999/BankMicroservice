@@ -21,5 +21,6 @@ public class Bank {
     private String name;
     @NotBlank(message = "'name' can't be blank")
     private int transactionLeft;
+    private Double comision;
     private Set<String> clientProfiles;
 }

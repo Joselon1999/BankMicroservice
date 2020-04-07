@@ -13,5 +13,6 @@ public class BankRequest {
     private String id;
     private String name;
     private int transactionLeft;
+    private Double comision;
     private Set<String> clientProfiles;
 }
