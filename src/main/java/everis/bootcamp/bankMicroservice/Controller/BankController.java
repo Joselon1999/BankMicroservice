@@ -22,7 +22,7 @@ public class BankController {
             notes = "Requires a BankRequest Params - Which are the same as  the bank Params" +
                     "excluding the ID")
     @PostMapping(value = "")
-    public Mono<Bank> createBank(@Valid @RequestBody BankRequest bankRequest){
+    public Mono<Bank> createBank(@Valid @RequestBody Bank bankRequest){
         return bankService.create(bankRequest);
     }
     /*UPDATE*/

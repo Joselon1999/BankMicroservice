@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface BankService {
-    Mono<Bank> create(BankRequest bankRequest);
+    Mono<Bank> create(Bank bankRequest);
     Mono<Bank> update(String id,BankRequest bankRequest);
     Flux<Bank> readAll();
     Mono<Bank> delete(String id);

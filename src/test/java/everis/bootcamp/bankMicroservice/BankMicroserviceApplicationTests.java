@@ -9,5 +9,8 @@ class BankMicroserviceApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
+	@Test
+	public void main() {
+		BankMicroserviceApplication.main(new String[] {});
+	}
 }

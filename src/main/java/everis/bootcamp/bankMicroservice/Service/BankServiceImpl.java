@@ -18,7 +18,7 @@ public class BankServiceImpl implements BankService {
     BankRepository bankRepository;
 
     @Override
-    public Mono<Bank> create(BankRequest bankRequest) {
+    public Mono<Bank> create(Bank bankRequest) {
         Bank bank = new Bank();
         bank.setName(bankRequest.getName());
         bank.setClientProfiles(bankRequest.getClientProfiles());
